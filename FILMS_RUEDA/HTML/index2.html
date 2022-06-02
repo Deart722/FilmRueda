@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>RUEDA FILMS</title>
+        <link rel="stylesheet" href="../CSS/style2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Parte de API-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="../IMAGES/icon-modified.png">
+        <!----------------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     </head>
+     <body>
+
+      <!--Parte de la Navegacion Web-->
+
+        <nav>
+           <div class="menu-icon">
+              <span class="fas fa-bars"></span>
+           </div>
+           
+           <div class="logo">
+            <img src="../IMAGES/icon-modified.png" alt="IconFilm">
+               FilmRueda   
+           </div>
+           <div class="nav-items">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Genres</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Register</a></li>
+           </div>
+           <div class="search-icon">
+              <span class="fas fa-search"></span>
+           </div>
+           <div class="cancel-icon">
+              <span class="fas fa-times"></span>
+           </div>
+           <form action="#">
+              <input type="search" class="search-data" placeholder="Search" required>
+              <button type="submit" class="fas fa-search"></button>
+           </form>
+        </nav>
+        <!-------------------------------------->
+                <!--Parte de Peliculas-->
+
+        <div class="contenedor" id="contenedor">
+           <!-- Esta clase contendra todas las peliculas que se recibiran como respuesta de la API-->
+        </div>
+
+        <div class="paginacion">
+            <button id="btnAnterior">Anterior</button>
+            <button id="btnSiguiente">Siguiente</button>
+        </div>
+    
+       
+        <script src="../JAVASCRIPT/main2.js">
+        </script>
+        <script src="../JAVASCRIPT/api.js"></script>
+
+     </body>
+</html>

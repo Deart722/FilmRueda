@@ -1,0 +1,193 @@
+
+/*TEMA DEL FONT (LETRA)*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+/*Para que el tamaño de toda la pagina web sea sin margen y sin padding y el tamaño de los contenedores el tamaño de la caja sea total*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*1) QUITAR EL ESTILO A TODAS LAS ETIQUETAS QUE VENGAN CON ESTILO POR DEFECTO (a, ul)*/
+/*Afecta a todo el body*/
+body{
+
+    font-family: 'Poppins',sans-serif;
+}
+/*Para todos los enlaces en la pagina*/
+a{
+    text-decoration: none;
+}
+/*para todas aquellas listas No ordenadas*/
+ul{
+
+    list-style: none;
+}
+
+/*Header*/
+header{
+    display: flex;
+    background-color: #1263dd;
+    justify-content: space-around;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+/*NAV BAR*/
+    /*LOGO*/
+    .logo{
+        display: flex;
+    }
+    .logo img{
+        width: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .header_Logo{
+
+        color: #eeee;
+        font-weight: 600;
+    }
+    /*NAV LIST*/
+    .nav_List{
+        display: flex;
+        align-items: center;    
+    }
+    .nav_item{
+        margin: 0 8px;
+    }
+    .nav_link{
+        padding: 10px;
+        color: #eeee;
+        font-size: 0.9rem;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+    .nav_link:hover{
+        background-color: #00adb5;
+    }
+    .header_herramienta,.header__close{
+        display: none;
+    }
+    /*------RESPONSIVE------*/
+    @media screen and (max-width: 768){
+
+        header{
+            height: 48px;
+            justify-content: space-between;
+            padding: 0 28px;
+        }
+        .logo a {
+            font-size: 0.9rem;
+        }
+        .logo img{
+            width: 30px;
+        }
+        .header_herramienta{
+            display: inline;
+            color: #eeee;
+            font-size: 24px;
+        }
+        .header__close{
+            position: absolute;
+            right: 24px;
+            display: block;
+            font-size: 24px;
+            border-radius: 50px;
+        }
+        .header__close:hover{
+           background-color: #00adb5;
+        }
+        .nav{
+            position: fixed;
+            top:0;
+            right: -100%;
+            background-color: #222831;
+            color: #eeee;
+            width: 60%;
+            height: 100vh;
+            padding: 24px 0;
+            z-index: 100;
+            transition: 0.5s;
+            border-radius: 0 0 0 50%;
+        }
+        .nav_List{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .nav_item{
+            margin: 2rem 0;
+            
+        }
+    }
+ /*API VERSION*/
+ * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #137c32;
+}
